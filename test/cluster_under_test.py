@@ -13,7 +13,7 @@ class ClusterUnderTest:
     SERVER3 = OrganizationConf.server_name(zone, db_instance_name, 3)
     SERVER4 = OrganizationConf.server_name(zone, db_instance_name, 4)
     service_url = OrganizationConf.service_url(zone, db_instance_name)
-    credentials_folder = "../postgres-credentials"
+    credentials_folder = "../../postgres-credentials"
     admin_password = open("{folder}/psql/{zone}/{name}/admin_password".format(
         folder=credentials_folder, zone=zone, name=db_instance_name)).read().strip()
     backuper_aws_credentials = \
